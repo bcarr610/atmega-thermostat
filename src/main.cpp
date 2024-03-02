@@ -169,10 +169,6 @@ void loop() {
     triggerChangeAt = 0;
   }
 
-  if (hvac.isRunning && temperature == targetTemp && targetTempReachedAt == 0) {
-
-  }
-
   // HVAC Control Logic
   if (hvacCanExecuteQueue && temperature > 0) {
     uint8_t tmpRangeTop;
